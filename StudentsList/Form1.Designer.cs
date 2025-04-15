@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            createNoteButton = new Button();
+            SuspendLayout();
+            // 
+            // createNoteButton
+            // 
+            createNoteButton.Location = new Point(326, 162);
+            createNoteButton.Name = "createNoteButton";
+            createNoteButton.Size = new Size(150, 40);
+            createNoteButton.TabIndex = 0;
+            createNoteButton.Text = "Create Note";
+            createNoteButton.UseVisualStyleBackColor = true;
+            createNoteButton.Click += createNoteButton_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(createNoteButton);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button createNoteButton;
     }
 }

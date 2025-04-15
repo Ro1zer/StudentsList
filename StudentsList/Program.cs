@@ -1,3 +1,5 @@
+using StudentsList.Models;
+
 namespace StudentsList
 {
     internal static class Program
