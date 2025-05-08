@@ -15,9 +15,10 @@ namespace StudentsList.Service
             this.note = note;
         }
         
-        public void SaveNote()
+        public void SaveNote(String name, String description)
         {
-            
+            note.Description = description;
+            note.Name = name;
         }
 
         public void DeleteNote()
