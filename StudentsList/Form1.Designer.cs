@@ -37,7 +37,7 @@
             closeToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
             descriptionTextBox = new TextBox();
-            label1 = new Label();
+            titleLabel = new Label();
             titleTextBox = new TextBox();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -64,7 +64,7 @@
             // 
             newToolStripMenuItem.Image = Properties.Resources.new_icon;
             newToolStripMenuItem.Name = "newToolStripMenuItem";
-            newToolStripMenuItem.Size = new Size(107, 22);
+            newToolStripMenuItem.Size = new Size(180, 22);
             newToolStripMenuItem.Text = "New";
             newToolStripMenuItem.Click += newToolStripMenuItem_Click;
             // 
@@ -72,7 +72,7 @@
             // 
             openToolStripMenuItem.Image = Properties.Resources.open_icon;
             openToolStripMenuItem.Name = "openToolStripMenuItem";
-            openToolStripMenuItem.Size = new Size(107, 22);
+            openToolStripMenuItem.Size = new Size(180, 22);
             openToolStripMenuItem.Text = "Open";
             openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
@@ -80,7 +80,7 @@
             // 
             saveToolStripMenuItem.Image = Properties.Resources.save_icon;
             saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            saveToolStripMenuItem.Size = new Size(107, 22);
+            saveToolStripMenuItem.Size = new Size(180, 22);
             saveToolStripMenuItem.Text = "Save";
             saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;
             // 
@@ -88,7 +88,7 @@
             // 
             deleteToolStripMenuItem.Image = Properties.Resources.delete_icon;
             deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            deleteToolStripMenuItem.Size = new Size(107, 22);
+            deleteToolStripMenuItem.Size = new Size(180, 22);
             deleteToolStripMenuItem.Text = "Delete";
             deleteToolStripMenuItem.Click += deleteToolStripMenuItem_Click;
             // 
@@ -96,7 +96,7 @@
             // 
             closeToolStripMenuItem.Image = Properties.Resources.close_icon;
             closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            closeToolStripMenuItem.Size = new Size(107, 22);
+            closeToolStripMenuItem.Size = new Size(180, 22);
             closeToolStripMenuItem.Text = "Close";
             closeToolStripMenuItem.Click += closeToolStripMenuItem_Click;
             // 
@@ -104,7 +104,7 @@
             // 
             exitToolStripMenuItem.Image = Properties.Resources.exit_icon;
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(107, 22);
+            exitToolStripMenuItem.Size = new Size(180, 22);
             exitToolStripMenuItem.Text = "Exit";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
@@ -118,15 +118,15 @@
             descriptionTextBox.Size = new Size(453, 389);
             descriptionTextBox.TabIndex = 2;
             // 
-            // label1
+            // titleLabel
             // 
-            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label1.AutoSize = true;
-            label1.Location = new Point(19, 431);
-            label1.Name = "label1";
-            label1.Size = new Size(33, 15);
-            label1.TabIndex = 3;
-            label1.Text = "Title:";
+            titleLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            titleLabel.AutoSize = true;
+            titleLabel.Location = new Point(19, 431);
+            titleLabel.Name = "titleLabel";
+            titleLabel.Size = new Size(33, 15);
+            titleLabel.TabIndex = 3;
+            titleLabel.Text = "Title:";
             // 
             // titleTextBox
             // 
@@ -143,7 +143,7 @@
             BackColor = SystemColors.Control;
             ClientSize = new Size(483, 463);
             Controls.Add(titleTextBox);
-            Controls.Add(label1);
+            Controls.Add(titleLabel);
             Controls.Add(descriptionTextBox);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -166,7 +166,7 @@
         private ToolStripMenuItem deleteToolStripMenuItem;
         private ToolStripMenuItem closeToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
-        private Label label1;
+        private Label titleLabel;
         private TextBox descriptionTextBox;
         private TextBox titleTextBox;
     }

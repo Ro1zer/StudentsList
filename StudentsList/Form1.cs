@@ -5,7 +5,7 @@ namespace StudentsList
 {
     public partial class Form1 : Form
     {
-        private NoteService noteService = new NoteService(new Note());
+        private NoteService noteService = new NoteService();
         public Form1()
         {
             InitializeComponent();
@@ -20,12 +20,18 @@ namespace StudentsList
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Note file = noteService.NewNote();
+            if (file == null) return;
+            titleTextBox.Text = file.Title;
+            descriptionTextBox.Text = file.Description;
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            Note file = noteService.OpenNote();
+            if (file == null) return;
+            titleTextBox.Text = file.Title;
+            descriptionTextBox.Text = file.Description;
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
@@ -45,7 +51,6 @@ namespace StudentsList
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bye! :)");
             System.Environment.Exit(0);
         }
     }

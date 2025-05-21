@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Notes\" />
     <Folder Include="Resource\" />
   </ItemGroup>
 

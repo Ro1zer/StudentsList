@@ -8,11 +8,11 @@ namespace StudentsList.Models
 {
     internal class Note
     {
-        public string Name { get; set; }
+        public string Title { get; set; }
         public string Description { get; set;}
 
-        public Note(string name, string description) {
-            this.Name = name; 
+        public Note(string title, string description) {
+            this.Title = title; 
             this.Description = description;
         }
 
